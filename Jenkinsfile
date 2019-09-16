@@ -6,6 +6,7 @@ agent any
 			steps {
 				nodejs(nodeJSInstallationName: 'Node 12.x') {
 					sh 'npm config ls'
+          sh 'npm test'
 				}
 			}
 		}
