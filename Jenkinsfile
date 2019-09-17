@@ -5,8 +5,8 @@ agent any
 		stage('Build') {
 			steps {
 			    
-          sh 'apt-get install nodejs'
-          sh 'apt-get install npm'
+          sh 'sudo apt-get install nodejs'
+          sh 'sudo apt-get install npm'
 					sh 'npm config ls'
           sh 'npm test'
 				
